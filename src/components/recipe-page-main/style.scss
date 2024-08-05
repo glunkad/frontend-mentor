@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Young+Serif&display=swap');
+:root {
+    // Font
+    --primary-font:'Young Serif', serif;
+    --secondary-font:'Outfit', sans-serif;
+    --primary-font-weight: 400;
+    --secondary-font-weight-regular: 400;
+    --secondary-font-weight-medium: 600;
+    --secondary-font-weight-bold: 700;
+    // Color Variables
+    --white: hsl(0, 0%, 100%);
+    --stone-100: hsl(30, 54%, 90%);
+    --stone-150: hsl(30, 18%, 87%);
+    --stone-600: hsl(30, 10%, 34%);
+    --stone-900: hsl(24, 5%, 18%);
+    --brown-800: hsl(14, 45%, 36%);
+    --rose-800: hsl(332, 51%, 32%);
+    --rose-50: hsl(330, 100%, 98%);
+    font-size: 62.5%;
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    background-color: var(--stone-100);
+
+    > .container {
+        background-color: var(--white);
+        padding: 4rem;
+        width: 74rem;
+        border-radius: 2rem;
+
+        img {
+            border-radius: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-family: var(--primary-font);
+            font-weight: var(--primary-font-weight);
+            font-size: 3.8rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-family: var(--secondary-font);
+            font-weight: var(--secondary-font-weight-regular);
+            font-size: 1.6rem;
+            color: var(--stone-600);
+        }
+
+        > .block-qoute {
+            margin: 2rem;
+            background-color: var(--rose-50);
+            padding: 1.5rem 3rem;
+            border-radius: 1.5rem;
+
+            > p {
+                font-weight: var(--secondary-font-weight-medium);
+                color: var(--rose-800);
+                font-size: 1.6rem;
+            }
+        }
+
+        strong {
+            font-family: var(--secondary-font);
+            font-weight: var(--secondary-font-weight-bold);
+        }
+
+        li {
+            font-size: 1.6rem;
+            font-family: var(--secondary-font);
+            font-weight: var(--secondary-font-weight-regular);
+            padding-left: 2rem;
+            color: var(--stone-600);
+
+        }
+
+        h3 {
+            font-size: 2.1rem;
+            color: var(--brown-800);
+        }
+
+        li::marker {
+            color: var(--brown-800);
+        }
+
+        hr {
+            margin: 2rem 0;
+            border: 1px solid var(--stone-150);
+        }
+
+        table {
+            font-family: var(--secondary-font);
+            display: flex;
+            justify-content: center;
+
+            #content {
+                color: var(--brown-800);
+                font-weight: var(--secondary-font-weight-bold);
+            }
+        }
+
+
+    }
+
+
+
+
+}
