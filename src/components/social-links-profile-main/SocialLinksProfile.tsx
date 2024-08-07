@@ -1,10 +1,12 @@
+import "./style.scss"
+
 export const SocialLinksProfile = () => {
     return (
         <>
             <div className="wrapper">
                 <div className="container">
                     <div className="user-details">
-                        <img src="" alt="user image"/>
+                        <div className="avatar"></div>
                         <h1>Jessica Randall</h1>
                         <h3>London, United Kingdom</h3>
                         <p>"Front-end developer and avid reader."</p>
