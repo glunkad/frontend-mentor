@@ -2,9 +2,8 @@ import "./style.scss"
 export const FaqAccordion = () => {
     return (
         <>
+            <div className="bg-image"></div>
             <div className="wrapper1">
-
-
                 <div className="card">
                     <div className="card-header">
                         <div className="icon"></div>
