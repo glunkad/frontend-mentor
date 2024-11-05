@@ -1,5 +1,24 @@
-import "./style.scss"
+import "./style.scss";
+import jsonData from "./data.json";
+const Section = ({title, description}) => {
+    return (
+        <>
+            <div className="card-body-question">
+                <div className="question">{title}</div>
+                <a>SHOW</a>
+            </div>
+            <div className="card-body-answer">
+                <p>
+                    {description}
+                </p>
+            </div>
+        </>
+    );
+}
+
+
 export const FaqAccordion = () => {
+    const data = jsonData.sections;
     return (
         <>
             <div className="bg-image"></div>
@@ -10,17 +29,9 @@ export const FaqAccordion = () => {
                         <h1>FAQs</h1>
                     </div>
                     <div className="card-body">
-                        <div className="card-body-title">
-                            <div className="title-text">What is Frontend Mentor, and how will it help me?</div>
-                            <div className="icon"></div>
-                        </div>
-                        <div className="card-body-text">
-                            <p>
-                                Frontend Mentor offers realistic coding challenges to help developers improve their
-                                frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for
-                                all levels and ideal for portfolio building.
-                            </p>
-                        </div>
+                        {
+                            data.map((section) => <Section {...section} key={section.title}/> )
+                        }
                     </div>
                 </div>
 

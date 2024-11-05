@@ -26,16 +26,59 @@ body {
   height: 100vh;
 
   > .card {
-    width: 38.4rem;
-    height: 52.2rem;
+    width: 30rem;
+    height: 40rem;
     background-color: var(--white);
     border-radius: 2rem;
     border: 1px solid black;
+    padding: 2.5rem;
 
     > .blog-image {
-      //background:url("./assets/images/illustration-article.svg") ;
-      background:url("./assets/images/illustration-article.svg") ;
-      width: 20rem;
+      background:url("./assets/images/illustration-article.svg") no-repeat center;
+      background-size: cover;
+      height: 38%;
+      border-radius: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    > .content {
+      margin-bottom: 2.5rem;
+
+      >.blog-tag {
+
+        a {
+          text-decoration: none;
+          font-weight: var(--primary-font-weight-bold);
+          font-size: 1.2rem;
+          color: var(--dark-purple);
+          padding: 0.5em 1.25em;
+          background-color: var(--yellow);
+          border-radius: 0.5rem;
+        }
+
+      }
+
+      p {
+        font-size: 1.2rem;
+        font-weight: var(--primary-font-weight-regular);
+        margin: 1.5rem 0;
+      }
+
+      h3 {
+        font-size: 1.6rem;
+        font-weight: var(--primary-font-weight-bold);
+        color: var(--yellow);
+        cursor: pointer;
+      }
+    }
+
+    > .author {
+      display: flex;
+
+      > .user-avatar {
+        background: url("./assets/images/image-avatar.webp") no-repeat center;
+
+      }
     }
 
   }

@@ -37,6 +37,18 @@ body {
     margin: 0 auto;
     top: 20%;
     position: absolute;
+
+    > .card-body {
+      > .card-body-question {
+        display: flex;
+        flex-direction: row;
+
+      }
+
+      > .card-body-answer {
+
+      }
+    }
   }
 
 }
